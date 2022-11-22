@@ -25,7 +25,7 @@ public class Customer {
     }
 
     public void buyCar(Car car){
-        if(car.getPrice() >= wallet) {
+        if(car.getPrice() <= this.wallet) {
             this.cars.add(car);
         }
     }
